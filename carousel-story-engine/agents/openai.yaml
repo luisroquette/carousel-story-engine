@@ -1,0 +1,4 @@
+interface:
+  display_name: "Carousel Story Engine"
+  short_description: "Create polished, evidence-led social carousels"
+  default_prompt: "Use $carousel-story-engine to turn this topic into a polished Instagram carousel."
