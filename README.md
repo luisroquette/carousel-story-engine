@@ -45,7 +45,7 @@ Depending on what you ask for, the skill can deliver:
 - a caption that adds value instead of summarizing the deck;
 - visual components, composition, hierarchy, transitions, and source notes;
 - clean JSON for a renderer or automation pipeline;
-- optional HTML previews and exported PNGs when the host agent has rendering tools.
+- optional HTML previews, exported PNGs, and LinkedIn-ready PDFs when the host agent has rendering tools.
 
 Internal reasoning and QA notes stay separate from the publishable copy. Your production team gets a usable brief, not a transcript of the AI thinking aloud.
 
@@ -136,7 +136,13 @@ Teams can stop after the angle or hook stage for approval before spending time o
 
 The skill does more than enforce a slide template. It adapts the sequence to the material, varies copy density, introduces a useful pattern break, and learns the brand's language from supplied examples.
 
+For factual decks, a claim ledger keeps observations, calculations, theses, hypotheticals, and recommendations separate. Public citation markers remain attached to material claims while full sources stay in the caption or end matter.
+
+Rendered work has its own acceptance gate: native dimensions, loaded fonts, overflow checks, contrast, safe areas, contact-sheet review, and original-resolution inspection. A render is not marked finished merely because the export command succeeded.
+
 When performance data is available, it tracks what matters by hook, topic, format, CTA, and visual treatment. Shares per reach, saves per reach, profile visits, qualified followers, leads, and sales are more useful than a pile of likes.
+
+The repository also includes a [six-case regression suite](evals/cases.md), a public [quality rubric](evals/quality-rubric.md), and the latest [test results](evals/regression-results.md). The tests cover reported facts, observed cases, commercial theses, weak-draft repair, technical changelogs, and cultural stories.
 
 ## Keep your own visual identity
 
@@ -169,7 +175,10 @@ carousel-story-engine/
 ├── assets/                       # before/after and workflow visuals
 ├── carousel-story-engine/
 │   ├── agents/openai.yaml
+│   ├── references/
+│   │   └── editorial-quality.md  # claim ledger and final quality gate
 │   └── SKILL.md                  # the portable skill
+├── evals/                        # regression cases and scoring rubric
 ├── examples/
 │   └── consulting-risk-carousel.md
 ├── LICENSE
