@@ -1,98 +1,84 @@
 # Example: consulting risk carousel
 
-## Brief
-
-- Audience: independent consultants
-- Premise: clients value a method when it reduces perceived risk
-- Objective: authority
-- Tone: direct and sophisticated
-- Evidence mode: thesis; no statistics or empirical claims
-
 ## Editorial decision
 
-- Selected angle: a proposal should make risk control visible
-- Cover promise: explain what clients evaluate before trusting a method
-- Reader payoff: a practical way to rewrite a consulting proposal
-- CTA: diagnose the central risk in the reader's own proposal
+- Audience: independent consultants
+- Evidence mode: thesis; no empirical claims
+- Selected angle: make risk control visible in the proposal
+- Reader payoff: a practical proposal audit
+- Objective and CTA: authority; diagnose the risk carried by the buyer
 
-## Carousel
+## Publishable copy
 
-### Slide 1 - Cover
+### Slide 1
 
-**Headline:** Seu cliente avalia o risco antes de admirar seu método
+**Sua proposta precisa reduzir o risco de quem assina**
 
-**Body:** A autoridade do consultor começa quando a decisão de contratar parece segura.
+### Slide 2
 
-**Visual:** Layout tipográfico. “Risco” em grande escala; “método” menor ao fundo. Fundo grafite e acento cobre.
+**Quem contrata também coloca o nome na decisão**
 
-### Slide 2 - Context
+Uma escolha ruim pode consumir orçamento, atrasar a equipe e desgastar a reputação de quem aprovou o projeto.
 
-**Headline:** Toda contratação expõe quem assina
+### Slide 3
 
-**Body:** A decisão pode comprometer orçamento, prazo, reputação interna e capacidade de execução. O cliente precisa justificar essa exposição.
+**Cinco etapas ainda deixam perguntas abertas**
 
-**Visual:** Quatro cartões: orçamento, prazo, reputação e execução.
+O processo explica como você trabalha. O comprador também precisa saber onde poderá revisar, limitar ou interromper o compromisso.
 
-### Slide 3 - Tension
+### Slide 4
 
-**Headline:** Um framework, sozinho, ainda exige confiança
+**Ligue cada etapa a uma incerteza real**
 
-**Body:** Etapas bem organizadas demonstram raciocínio. A decisão fica mais segura quando elas também mostram limites, provas e controle.
+Mostre o que será validado, qual evidência será observada e quando os dois lados decidirão avançar.
 
-**Visual:** Documento metodológico passando por três filtros: limites, provas e controle.
+### Slide 5
 
-### Slide 4 - Mechanism
+**Compare duas versões da mesma proposta**
 
-**Headline:** Transforme metodologia em proteção percebida
+“Aplicaremos nosso processo em cinco etapas.”
 
-**Body:** Conecte cada etapa a uma incerteza concreta: o que será validado, quando o cliente poderá revisar e quais sinais interrompem o avanço.
+“Começaremos com um piloto, critérios definidos e uma revisão antes da expansão.”
 
-**Visual:** Diagrama horizontal: incerteza → validação → checkpoint → decisão.
+### Slide 6
 
-### Slide 5 - Example
+**Os controles também demonstram autoridade**
 
-**Headline:** Compare duas formas de apresentar o mesmo trabalho
+Escopo, premissas, checkpoints e critérios de saída mostram como você protege a decisão durante a execução.
 
-**Body:**
+### Slide 7
 
-> Proposta A: “Aplicaremos nosso processo em cinco etapas.”
->
-> Proposta B: “Começaremos com um piloto, critérios definidos e uma revisão antes da expansão.”
+**Audite sua proposta com quatro perguntas**
 
-**Visual:** Comparação em duas colunas. Destacar “piloto”, “critérios” e “revisão”.
+Qual risco está sendo reduzido? Que evidência sustenta a abordagem? Como o compromisso será dividido? Quando a decisão será reavaliada?
 
-### Slide 6 - Implication
+### Slide 8
 
-**Headline:** Autoridade também aparece no desenho da decisão
+**Comece pelo risco que seu cliente precisa justificar**
 
-**Body:** Escopo claro, premissas explícitas, checkpoints e critérios de saída revelam maturidade. Eles mostram como você conduz o trabalho e protege a escolha.
-
-**Visual:** Planta técnica de um projeto com quatro pontos de controle.
-
-### Slide 7 - Application
-
-**Headline:** Faça sua proposta responder a quatro perguntas
-
-**Body:** Qual risco está sendo reduzido? Que evidência sustenta a abordagem? Como o compromisso será dividido? Quando a decisão será reavaliada?
-
-**Visual:** Checklist numerado, com bastante espaço e hierarquia forte.
-
-### Slide 8 - CTA
-
-**Headline:** Sua proposta vende trabalho ou segurança decisória?
-
-**Body:** Revise a abertura da proposta. Identifique o risco central e mostre como sua abordagem o torna administrável.
-
-**CTA:** Qual risco seus clientes precisam justificar antes de contratar você?
-
-**Visual:** Página de proposta com o campo “Risco central” marcado em cobre.
+Reescreva a abertura da proposta. Nomeie esse risco e mostre como seu trabalho o torna administrável.
 
 ## Caption
 
-Na próxima proposta, marque todas as frases que apenas descrevem etapas. Ao lado de cada uma, escreva qual incerteza aquela etapa resolve.
+Faça um teste na próxima proposta: circule as frases que apenas descrevem etapas. Ao lado de cada uma, escreva qual incerteza aquela etapa reduz.
 
-Quando não existe uma resposta concreta, o método ainda está explicado do ponto de vista do consultor. O cliente precisa enxergar como a decisão será protegida durante a execução.
+Se a resposta não estiver clara, o processo ainda está descrito apenas do seu ponto de vista.
 
-Qual risco costuma pesar mais nas decisões dos seus clientes?
+Qual risco costuma pesar mais para quem aprova seus projetos?
 
 #ConsultoriaIndependente #VendaConsultiva #Posicionamento
+
+## Production notes
+
+| Slide | Role | Transition | Component | Composition |
+|---|---|---|---|---|
+| 1 | Cover | Quem carrega esse risco? | Type-only | “Risco” ocupa metade inferior; texto alinhado à esquerda; fundo grafite e acento cobre. |
+| 2 | Context | O método resolve essa exposição? | Four-part risk card | Nome do decisor no centro; orçamento, prazo, equipe e reputação orbitam ao redor. |
+| 3 | Tension | O que precisa aparecer além das etapas? | Document with open fields | Cinco etapas preenchidas à esquerda; revisão, limite e saída vazios à direita. |
+| 4 | Mechanism | Como isso muda a proposta? | Process diagram | Incerteza → validação → evidência → decisão; uma linha horizontal, sem ícones decorativos. |
+| 5 | Example and pattern break | O que a segunda versão comunica? | Comparison | Duas colunas assimétricas; destacar “piloto”, “critérios” e “revisão” somente na segunda. |
+| 6 | Implication | Como aplicar essa lógica? | Blueprint | Quatro controles marcados sobre a planta de um projeto; bastante espaço negativo. |
+| 7 | Application | Qual pergunta vem primeiro? | Checklist | Quatro perguntas numeradas, uma por linha; primeira pergunta em cobre. |
+| 8 | CTA | Final | Proposal page | Campo “Risco que o comprador precisa justificar” aberto para preenchimento. |
+
+No source notes are required because the deck is explicitly framed as a thesis.

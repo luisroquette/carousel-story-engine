@@ -35,8 +35,11 @@ This skill adds an editorial process before the design work begins. It helps an 
 - Generates competing hooks instead of settling for the first idea
 - Builds a narrative spine before writing slides
 - Produces slide copy, visual direction, caption, and CTA
+- Learns the brand's vocabulary, rhythm, and point of view from supplied samples
 - Detects generic AI writing and unsupported claims
 - Separates reported facts, observed evidence, and unproven theses
+- Stress-tests every argument against reader skepticism and unnecessary repetition
+- Varies copy density and composition so the deck does not feel templated
 - Runs a mandatory revision pass before delivery
 - Supports HTML/PNG rendering workflows
 - Learns from your own performance data instead of trusting universal “viral formulas”

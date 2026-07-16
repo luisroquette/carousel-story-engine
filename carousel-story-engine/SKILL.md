@@ -13,9 +13,11 @@ Turn a raw idea into a clear, credible, visually directed carousel. Optimize for
 - Lead with tension, change, consequence, or a useful unresolved question.
 - Separate fact, interpretation, and recommendation.
 - Make every slide advance one narrative.
+- Compress the idea before decorating it. Fewer, sharper claims beat a crowded deck.
 - Prefer names, dates, numbers, mechanisms, and observable examples.
 - Use AI as an editor and production system, not as a source of invented facts.
 - Keep the brand's voice and visual identity distinct from any reference account.
+- Vary pace and layout deliberately. A carousel should feel edited, not assembled from eight matching templates.
 
 ## Required inputs
 
@@ -29,6 +31,17 @@ Infer what is safe to infer. Ask only for information that materially changes th
 6. Slide count, CTA, and asset preferences, when specified
 
 Default to 8 slides, Instagram 1080 x 1350, an editorial tone, and a soft CTA.
+
+When the user supplies previous posts, transcripts, or brand copy, extract a compact voice fingerprint before drafting:
+
+```text
+Vocabulary: recurring words, technical language, and words to avoid
+Rhythm: typical sentence length, punctuation, and degree of informality
+Point of view: what the brand tends to notice, defend, or challenge
+Signature behavior: examples, analogies, humor, directness, or restraint
+```
+
+Imitate the underlying choices, never memorable phrases from the samples.
 
 ## Workflow
 
@@ -108,7 +121,20 @@ Hook -> Context -> Mechanism -> Evidence -> Implication -> Application -> CTA br
 
 Write one sentence for the promise, one for the payoff, and one for the evidence boundary. If the argument cannot progress without repeating the hook, return to framing.
 
+Stress-test the spine against four silent reader objections:
+
+```text
+Why should I care?
+How exactly does this work?
+What supports this claim?
+What can I do with it?
+```
+
+The deck does not need to state these questions, but it must answer them in a sensible order.
+
 Adapt the sequence to the material. A case study may use situation, decision, mechanism, result, lesson. A contrarian thesis may use common belief, contradiction, evidence, explanation, implication.
+
+Do not force every topic into the recommended sequence. Change the number, order, or role of slides when the argument becomes clearer. Use one genuine pattern break near the middle: a concrete example, sourced quote, sharp comparison, image-led pause, or useful diagram.
 
 ### 4. Write the slides
 
@@ -141,6 +167,8 @@ Source note: only when factual support is needed
 Writing constraints:
 
 - Keep headlines concrete and readable at phone size.
+- Keep cover headlines to roughly 4 to 10 words. The cover must make sense without its body copy; remove the subtitle when it only repeats the headline.
+- Read the cover literally. Its subject, action, and object must express the intended claim without relying on the caption or an ambiguous abstraction.
 - Use no more than two short text blocks per slide.
 - Target 65 characters or fewer for an internal headline and 240 characters or fewer for body copy. Exceed only when meaning would otherwise be lost.
 - Preserve natural articles and connective words.
@@ -148,11 +176,15 @@ Writing constraints:
 - Avoid “not X, but Y” constructions, including close paraphrases.
 - Avoid em dashes used as dramatic hinges. Prefer a full stop, comma, colon, or a rewritten sentence.
 - Avoid paired sentences with mirrored rhythm that manufacture contrast without adding evidence.
+- Avoid dramatic triads: three short sentences in sequence with the same grammatical shape. Combine them or vary the rhythm.
 - Avoid generic AI phrasing, corporate jargon, and motivational filler.
 - Avoid artificial suspense such as “the last question changes your business” or “what comes next changes everything.” State the consequence directly.
 - Do not repeat the cover claim without adding information.
 - Put necessary nuance in the deck, not only in the caption.
 - Use a concrete object, decision, behavior, example, or mechanism on every slide after the cover.
+- Anchor an abstract claim with an observable example on the same slide or the next one. Never stack two purely conceptual slides.
+- Prefer active verbs and concrete nouns. Replace nominalizations such as “optimization of the process” with the actor and action.
+- Vary copy density. Follow a dense explanatory slide with a lighter example, comparison, or image-led slide when the story permits it.
 - Give visual direction that a designer could execute without guessing. “Use clean typography” is insufficient.
 
 ### 5. Run editorial QA
@@ -178,6 +210,9 @@ Apply these final tests:
 7. Absolutism test: is a thesis being presented as measured fact?
 8. CTA test: does the requested action logically follow from the value delivered?
 9. Rhythm test: remove dramatic punctuation, mirrored slogans, and sequences of equally short sentences.
+10. Skeptic test: answer “so what?”, “says who?”, and “how exactly?” where each objection first becomes reasonable.
+11. Compression test: remove any sentence whose deletion leaves the meaning unchanged.
+12. Voice test: could this exact copy appear on five unrelated expert accounts? If yes, add a sharper observation, example, or brand-specific choice.
 
 Never deliver the first draft. Run one silent revision pass after QA. Rewrite weak hooks, remove repeated ideas, replace vague visual directions, and tighten the caption before presenting the result.
 
@@ -197,6 +232,8 @@ Use:
 
 Avoid decorative arrows that imitate native swipe behavior, tiny body copy, arbitrary gradients, repeated identical layouts, and images that add no evidence or emotion.
 
+Do not repeat the same primary composition more than twice in a row. Variation must follow the information, not decoration. Keep stable brand tokens while changing scale, alignment, density, component, or image behavior.
+
 For each slide, select a component because it fits the information:
 
 - comparison for competing choices;
@@ -206,6 +243,8 @@ For each slide, select a component because it fits the information:
 - quote treatment for a sourced human statement;
 - type-only layout for a concise thesis or transition;
 - photo when a person, place, product, or event is evidence.
+
+Use a visual metaphor only when its meaning is immediate and more useful than a literal representation. Prefer a process diagram, annotated artifact, or real comparison when the metaphor would merely decorate the claim.
 
 When generating HTML, render each slide at native size. Wait for `document.fonts.ready`. Export each `.slide` element individually rather than capturing the viewport.
 
@@ -222,6 +261,10 @@ Create:
 Do not duplicate the full carousel in the caption.
 
 The caption must add at least one of these: source context, a practical application, a limitation, or a useful question. If it adds none, shorten it to a one-line framing statement plus the CTA.
+
+Treat the caption as the ninth piece of the argument, not a summary. It may show a behind-the-scenes decision, give one exercise, qualify the thesis, or invite a precise professional disagreement.
+
+Do not repeat the final slide's question or instruction verbatim in the caption. Add a complementary action or end cleanly when the slide already carries the CTA.
 
 Match the CTA to the objective:
 
@@ -254,6 +297,13 @@ Cover promise:
 Reader payoff:
 Objective and CTA:
 ```
+
+Then separate the deliverable into two layers:
+
+1. **Publishable copy:** only the words that appear on slides and in the caption.
+2. **Production notes:** role, transition, component, composition, asset, and source notes.
+
+Do not mix internal scores, rejected hooks, reasoning, or QA commentary into publishable copy unless the user asks to inspect the editorial process.
 
 When the user asks for a repeatable system, also return structured JSON:
 
