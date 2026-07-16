@@ -4,6 +4,24 @@ Turn a rough idea into a carousel people can actually finish, save, and share.
 
 `carousel-story-engine` is a portable AI skill for producing evidence-led Instagram and LinkedIn carousels. It handles the difficult parts that generic “write me eight slides” prompts skip: research, angle selection, hook comparison, narrative structure, editorial QA, visual direction, and production-ready output.
 
+<p align="center">
+  <img src="assets/workflow-demo.gif" alt="Carousel Story Engine workflow: raw idea, editorial pipeline, transformation, and finished carousel" width="800">
+</p>
+
+## See the difference
+
+The same topic can become forgettable template content or a specific editorial story. The skill forces the framing, evidence, narrative, and quality decisions that create the second result.
+
+![Before and after carousel example](assets/before-after.png)
+
+<p align="center">
+  <img src="assets/before-generic.png" alt="Generic carousel before editorial improvement" width="34%">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/after-editorial.png" alt="Editorial carousel after using Carousel Story Engine" width="34%">
+</p>
+
+<sub>Example artwork generated with GPT Image 2. The layouts are original and are not tied to any third-party brand.</sub>
+
 ## Why this exists
 
 Most AI carousels look polished for half a second and collapse when you read them. The hook overpromises, the middle repeats itself, the facts have no source, and the CTA arrives from nowhere.
