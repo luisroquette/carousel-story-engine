@@ -36,6 +36,8 @@ This skill adds an editorial process before the design work begins. It helps an 
 - Builds a narrative spine before writing slides
 - Produces slide copy, visual direction, caption, and CTA
 - Detects generic AI writing and unsupported claims
+- Separates reported facts, observed evidence, and unproven theses
+- Runs a mandatory revision pass before delivery
 - Supports HTML/PNG rendering workflows
 - Learns from your own performance data instead of trusting universal “viral formulas”
 
@@ -55,6 +57,8 @@ Use $carousel-story-engine to turn this research into an eight-slide Instagram c
 ```
 
 You can also provide a URL, article, transcript, opinion, case study, product insight, or a rough voice note transcription.
+
+See a complete production brief: [consulting risk carousel](examples/consulting-risk-carousel.md).
 
 ## Example requests
 

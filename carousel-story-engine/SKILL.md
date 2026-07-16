@@ -55,6 +55,14 @@ Payoff: what will the reader understand or do differently?
 
 Reject the topic when the audience bridge is forced or the evidence cannot support the promised payoff.
 
+Choose an evidence mode before writing:
+
+- **Reported:** supported by named external sources.
+- **Observed:** supported by a supplied case, transcript, dataset, or direct example.
+- **Thesis:** a reasoned point of view with no empirical proof supplied.
+
+In thesis mode, frame claims as arguments rather than universal facts. Never turn a provocative premise such as “clients buy less risk” into an unsupported absolute such as “clients do not buy frameworks.”
+
 ### 2. Create a hook tournament
 
 Generate 6 to 10 materially different hooks. Vary the angle, not just the wording:
@@ -80,6 +88,14 @@ Score each hook from 1 to 5 on:
 
 Reject hooks that rely on vague revelation, empty urgency, listicle filler, clickbait the deck cannot repay, or repetitive doom language.
 
+Also reject:
+
+- binary slogans shaped as “not X, but Y”;
+- universal claims unsupported by the chosen evidence mode;
+- a provocative sentence that merely restates the user's premise;
+- hooks whose only difference is punctuation or word order;
+- familiar advice with no fresh mechanism, consequence, or example.
+
 If the user did not ask to choose, select the highest-scoring hook and show the top three alternatives briefly.
 
 ### 3. Build the narrative spine
@@ -89,6 +105,8 @@ Before writing slides, define:
 ```text
 Hook -> Context -> Mechanism -> Evidence -> Implication -> Application -> CTA bridge
 ```
+
+Write one sentence for the promise, one for the payoff, and one for the evidence boundary. If the argument cannot progress without repeating the hook, return to framing.
 
 Adapt the sequence to the material. A case study may use situation, decision, mechanism, result, lesson. A contrarian thesis may use common belief, contradiction, evidence, explanation, implication.
 
@@ -114,7 +132,9 @@ Slide N
 Role:
 Headline:
 Body:
-Visual direction:
+Transition: what new question or implication pulls the reader forward
+Visual component: photo, comparison, timeline, diagram, quote, data card, or type-only
+Composition: concrete placement, scale, hierarchy, and accent behavior
 Source note: only when factual support is needed
 ```
 
@@ -122,12 +142,18 @@ Writing constraints:
 
 - Keep headlines concrete and readable at phone size.
 - Use no more than two short text blocks per slide.
+- Target 65 characters or fewer for an internal headline and 240 characters or fewer for body copy. Exceed only when meaning would otherwise be lost.
 - Preserve natural articles and connective words.
 - Avoid sentence fragments used only to sound dramatic.
-- Avoid repeated "not X, but Y" constructions.
+- Avoid “not X, but Y” constructions, including close paraphrases.
+- Avoid em dashes used as dramatic hinges. Prefer a full stop, comma, colon, or a rewritten sentence.
+- Avoid paired sentences with mirrored rhythm that manufacture contrast without adding evidence.
 - Avoid generic AI phrasing, corporate jargon, and motivational filler.
+- Avoid artificial suspense such as “the last question changes your business” or “what comes next changes everything.” State the consequence directly.
 - Do not repeat the cover claim without adding information.
 - Put necessary nuance in the deck, not only in the caption.
+- Use a concrete object, decision, behavior, example, or mechanism on every slide after the cover.
+- Give visual direction that a designer could execute without guessing. “Use clean typography” is insufficient.
 
 ### 5. Run editorial QA
 
@@ -148,6 +174,12 @@ Apply these final tests:
 3. Source test: can every important factual claim be traced?
 4. Mobile test: is each slide understandable in three seconds?
 5. Payoff test: does the deck answer the question created by the cover?
+6. Redundancy test: does each slide add a fact, mechanism, consequence, example, or decision?
+7. Absolutism test: is a thesis being presented as measured fact?
+8. CTA test: does the requested action logically follow from the value delivered?
+9. Rhythm test: remove dramatic punctuation, mirrored slogans, and sequences of equally short sentences.
+
+Never deliver the first draft. Run one silent revision pass after QA. Rewrite weak hooks, remove repeated ideas, replace vague visual directions, and tighten the caption before presenting the result.
 
 ### 6. Direct the visual system
 
@@ -165,6 +197,16 @@ Use:
 
 Avoid decorative arrows that imitate native swipe behavior, tiny body copy, arbitrary gradients, repeated identical layouts, and images that add no evidence or emotion.
 
+For each slide, select a component because it fits the information:
+
+- comparison for competing choices;
+- timeline for sequence or change;
+- diagram for a mechanism;
+- data card for one important number;
+- quote treatment for a sourced human statement;
+- type-only layout for a concise thesis or transition;
+- photo when a person, place, product, or event is evidence.
+
 When generating HTML, render each slide at native size. Wait for `document.fonts.ready`. Export each `.slide` element individually rather than capturing the viewport.
 
 ### 7. Write the caption
@@ -179,6 +221,21 @@ Create:
 
 Do not duplicate the full carousel in the caption.
 
+The caption must add at least one of these: source context, a practical application, a limitation, or a useful question. If it adds none, shorten it to a one-line framing statement plus the CTA.
+
+Match the CTA to the objective:
+
+- Reach: invite a specific share only when another person clearly benefits.
+- Authority: invite a substantive reply, profile visit, or follow tied to the topic.
+- Leads: offer a genuinely relevant resource or diagnostic with a clear delivery path.
+- Sales: name the next commercial step without disguising it as engagement.
+
+Avoid generic “save this” or “comment below” CTAs unless the content gives a concrete reason to do so.
+
+Do not use “follow for more” as a fallback. Recommend following only when the user has defined a recurring editorial promise that the next posts will fulfill. Otherwise end with a topic-specific diagnostic, decision, or question.
+
+Use no hashtags by default on LinkedIn. On Instagram, use zero to five precise hashtags only when they improve discovery; never append broad category tags automatically.
+
 ## Delivery formats
 
 Choose the smallest format that satisfies the request:
@@ -187,6 +244,16 @@ Choose the smallest format that satisfies the request:
 - Copy deck: slide-by-slide copy and caption
 - Production brief: copy plus visual direction and assets list
 - Rendered carousel: HTML preview and exported PNG files
+
+Begin a full delivery with a compact decision summary:
+
+```text
+Evidence mode:
+Selected angle:
+Cover promise:
+Reader payoff:
+Objective and CTA:
+```
 
 When the user asks for a repeatable system, also return structured JSON:
 
