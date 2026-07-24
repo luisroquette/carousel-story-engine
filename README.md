@@ -5,6 +5,7 @@
 A portable AI skill for creating evidence-led Instagram and LinkedIn carousels with sharper hooks, real narrative progression, production-ready visual direction, and copy that does not sound assembled by a template.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-111111.svg)](LICENSE)
+[![RocketLabs](https://img.shields.io/badge/RocketLabs-open%20system-7C5CFC)](https://github.com/luisroquette/RocketLabs)
 [![Latest release](https://img.shields.io/github/v/release/luisroquette/carousel-story-engine)](https://github.com/luisroquette/carousel-story-engine/releases/latest)
 [![GitHub stars](https://img.shields.io/github/stars/luisroquette/carousel-story-engine?style=social)](https://github.com/luisroquette/carousel-story-engine/stargazers)
 
@@ -191,3 +192,10 @@ carousel-story-engine/
 MIT. Use it in your own projects, adapt it to your workflow, and keep the output recognizably yours.
 
 If this skill saves you from publishing one more generic carousel, [star the repository](https://github.com/luisroquette/carousel-story-engine). It helps other creators find it.
+
+---
+
+<p align="center">
+  <strong>Carousel Story Engine is part of <a href="https://github.com/luisroquette/RocketLabs">RocketLabs</a>.</strong><br />
+  <sub>Explore more applied AI systems and reusable open-source playbooks.</sub>
+</p>
