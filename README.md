@@ -5,6 +5,7 @@
 A portable AI skill for creating evidence-led Instagram and LinkedIn carousels with sharper hooks, real narrative progression, production-ready visual direction, and copy that does not sound assembled by a template.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-111111.svg)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/luisroquette/carousel-story-engine)](https://github.com/luisroquette/carousel-story-engine/releases/latest)
 [![GitHub stars](https://img.shields.io/github/stars/luisroquette/carousel-story-engine?style=social)](https://github.com/luisroquette/carousel-story-engine/stargazers)
 
 [Install in 60 seconds](#install-in-60-seconds) · [See a complete output](examples/consulting-risk-carousel.md) · [Read the skill](carousel-story-engine/SKILL.md)
