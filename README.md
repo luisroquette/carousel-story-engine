@@ -1,134 +1,193 @@
 # Carousel Story Engine
 
-Turn a rough idea into a carousel people can actually finish, save, and share.
+**Turn raw expertise into carousels people can finish, trust, and share.**
 
-`carousel-story-engine` is a portable AI skill for producing evidence-led Instagram and LinkedIn carousels. It handles the difficult parts that generic “write me eight slides” prompts skip: research, angle selection, hook comparison, narrative structure, editorial QA, visual direction, and production-ready output.
+A portable AI skill for creating evidence-led Instagram and LinkedIn carousels with sharper hooks, real narrative progression, production-ready visual direction, and copy that does not sound assembled by a template.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-111111.svg)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/luisroquette/carousel-story-engine)](https://github.com/luisroquette/carousel-story-engine/releases/latest)
+[![GitHub stars](https://img.shields.io/github/stars/luisroquette/carousel-story-engine?style=social)](https://github.com/luisroquette/carousel-story-engine/stargazers)
+
+[Install in 60 seconds](#install-in-60-seconds) · [See a complete output](examples/consulting-risk-carousel.md) · [Read the skill](carousel-story-engine/SKILL.md)
 
 <p align="center">
-  <img src="assets/workflow-demo.gif" alt="Carousel Story Engine workflow: raw idea, editorial pipeline, transformation, and finished carousel" width="800">
+  <img src="assets/workflow-demo.gif" alt="A raw idea moving through the Carousel Story Engine and becoming a finished editorial carousel" width="800">
 </p>
+
+## Most AI carousels fail after the cover
+
+The first slide makes a large promise. The next six repeat it with different wording. Then a generic CTA asks the reader to save the post.
+
+Carousel Story Engine adds the missing editorial work. It finds a defensible angle, tests competing hooks, builds the argument, separates evidence from opinion, directs every slide visually, and revises the draft before delivery.
+
+The result is a carousel with a reason to keep swiping.
 
 ## See the difference
 
-The same topic can become forgettable template content or a specific editorial story. The skill forces the framing, evidence, narrative, and quality decisions that create the second result.
+The example below starts with the same topic. One version produces familiar advice. The other gives the reader a specific argument, a mechanism, and a useful next step.
 
 ![Before and after carousel example](assets/before-after.png)
 
 <p align="center">
-  <img src="assets/before-generic.png" alt="Generic carousel before editorial improvement" width="34%">
+  <img src="assets/before-generic.png" alt="Generic carousel created without an editorial system" width="34%">
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/after-editorial.png" alt="Editorial carousel after using Carousel Story Engine" width="34%">
+  <img src="assets/after-editorial.png" alt="Specific editorial carousel created with Carousel Story Engine" width="34%">
 </p>
 
 <sub>Example artwork generated with GPT Image 2. The layouts are original and are not tied to any third-party brand.</sub>
 
-## Why this exists
+## One prompt in. A production brief out.
 
-Most AI carousels look polished for half a second and collapse when you read them. The hook overpromises, the middle repeats itself, the facts have no source, and the CTA arrives from nowhere.
+Depending on what you ask for, the skill can deliver:
 
-This skill adds an editorial process before the design work begins. It helps an AI agent decide what the story is, why a specific audience should care, and what evidence can support the argument.
+- a selected angle with ranked hook alternatives;
+- slide copy with a clear narrative job for every page;
+- reported facts, observed evidence, and unproven theses labeled correctly;
+- a caption that adds value instead of summarizing the deck;
+- visual components, composition, hierarchy, transitions, and source notes;
+- clean JSON for a renderer or automation pipeline;
+- optional HTML previews, exported PNGs, and LinkedIn-ready PDFs when the host agent has rendering tools.
 
-## What it does
+Internal reasoning and QA notes stay separate from the publishable copy. Your production team gets a usable brief, not a transcript of the AI thinking aloud.
 
-- Researches and verifies claims when the topic requires it
-- Extracts the change, tension, mechanism, evidence, and audience payoff
-- Generates competing hooks instead of settling for the first idea
-- Builds a narrative spine before writing slides
-- Produces slide copy, visual direction, caption, and CTA
-- Detects generic AI writing and unsupported claims
-- Supports HTML/PNG rendering workflows
-- Learns from your own performance data instead of trusting universal “viral formulas”
+## A generic prompt vs. the engine
 
-## Quick start
+| Generic “write 8 slides” prompt | Carousel Story Engine |
+|---|---|
+| Accepts the first hook | Compares materially different angles |
+| Repeats the premise through the middle | Makes every slide add evidence, mechanism, consequence, or action |
+| Presents opinions as facts | Declares the evidence mode before writing |
+| Suggests “clean typography” | Specifies component, placement, scale, hierarchy, and accent behavior |
+| Copies common AI rhythms | Tests voice, compression, redundancy, and reader skepticism |
+| Ends with “save and follow” | Matches the CTA to reach, authority, leads, or sales |
 
-Copy the skill folder into your agent's skills directory:
+## Install in 60 seconds
+
+### Codex
 
 ```bash
 git clone https://github.com/luisroquette/carousel-story-engine.git
 cp -R carousel-story-engine/carousel-story-engine ~/.codex/skills/
 ```
 
-Then ask:
+Then run:
 
 ```text
-Use $carousel-story-engine to turn this research into an eight-slide Instagram carousel for independent consultants. The goal is authority, not direct sales.
+Use $carousel-story-engine to turn this research into an eight-slide Instagram carousel for independent consultants. The goal is authority. Keep factual claims sourced and return a production brief.
 ```
 
-You can also provide a URL, article, transcript, opinion, case study, product insight, or a rough voice note transcription.
+### Claude Code, Cursor, and other agents
+
+Copy [`carousel-story-engine/SKILL.md`](carousel-story-engine/SKILL.md) into the skills or project-rules location supported by your agent. You can also attach the file directly as project context.
+
+The skill is plain Markdown. There is no runtime service, account, or vendor lock-in.
+
+## Give it almost anything
+
+Useful inputs include:
+
+- an article or research paper;
+- a transcript, interview, or voice-note transcription;
+- a case study or customer story;
+- a strong opinion that needs a defensible argument;
+- an existing carousel that feels generic;
+- previous brand posts for vocabulary, rhythm, and point-of-view matching.
+
+If the brief is incomplete, the skill infers low-risk details and asks only for decisions that would materially change the result.
 
 ## Example requests
 
+Find the strongest angle in source material:
+
 ```text
-Use $carousel-story-engine to find three strong angles in this article, compare the hooks, and write the best carousel.
+Use $carousel-story-engine to find three strong angles in this article, compare the hooks, and write the best carousel for LinkedIn.
 ```
 
+Repair a weak draft:
+
 ```text
-Use $carousel-story-engine to audit this draft. Keep the core argument, remove generic AI writing, verify the statistics, and improve the narrative progression.
+Use $carousel-story-engine to audit this carousel. Keep the core argument, remove generic AI writing, verify the statistics, and fix the narrative progression.
 ```
 
+Feed an automated renderer:
+
 ```text
-Use $carousel-story-engine to create production-ready copy and visual direction in our brand voice. Return structured JSON for our renderer.
+Use $carousel-story-engine to create production-ready copy and visual direction in our brand voice. Return the final deck as structured JSON.
 ```
 
-## The workflow
+[Open the complete consulting carousel example →](examples/consulting-risk-carousel.md)
+
+## The editorial pipeline
 
 ```text
-Research
+Source verification
   -> Editorial framing
   -> Hook tournament
   -> Narrative spine
   -> Slide writing
-  -> Editorial QA
+  -> Skeptic and compression tests
   -> Visual direction
   -> Caption and CTA
-  -> Performance learning
+  -> Silent revision pass
 ```
 
-The skill includes approval-friendly stages, so teams can review the hook and argument before spending time on layout.
+Teams can stop after the angle or hook stage for approval before spending time on copy and design. Solo creators can run the full pipeline in one request.
 
-## Output options
+## Built for repeatable quality
 
-Ask for only what you need:
+The skill does more than enforce a slide template. It adapts the sequence to the material, varies copy density, introduces a useful pattern break, and learns the brand's language from supplied examples.
 
-- strategy and hook options;
-- slide-by-slide copy;
-- copy plus visual production brief;
-- structured JSON;
-- HTML preview and PNG exports, when your agent has rendering tools.
+For factual decks, a claim ledger keeps observations, calculations, theses, hypotheticals, and recommendations separate. Public citation markers remain attached to material claims while full sources stay in the caption or end matter.
 
-## Design philosophy
+Rendered work has its own acceptance gate: native dimensions, loaded fonts, overflow checks, contrast, safe areas, contact-sheet review, and original-resolution inspection. A render is not marked finished merely because the export command succeeded.
 
-The skill provides layout constraints and hierarchy rules without forcing a cloned visual identity. Your brand should remain recognizable. Reference accounts can inform quality, but they should never become templates to copy.
+When performance data is available, it tracks what matters by hook, topic, format, CTA, and visual treatment. Shares per reach, saves per reach, profile visits, qualified followers, leads, and sales are more useful than a pile of likes.
 
-## Works with
+The repository also includes a [six-case regression suite](evals/cases.md), a public [quality rubric](evals/quality-rubric.md), and the latest [test results](evals/regression-results.md). The tests cover reported facts, observed cases, commercial theses, weak-draft repair, technical changelogs, and cultural stories.
 
-- Codex
-- Claude Code
-- Cursor and other agents that support Markdown-based skills or rules
-- Manual prompt workflows, by attaching `SKILL.md` as project context
+## Keep your own visual identity
 
-Tool availability varies. Research and rendering steps adapt to the tools available in the host agent.
+Reference accounts can set a quality bar. They should not become a visual costume.
 
-## What it does not promise
+Carousel Story Engine chooses layouts according to the information on each slide: comparisons for competing options, diagrams for mechanisms, timelines for change, data cards for important numbers, and photos when the subject itself is evidence. Brand tokens remain consistent while scale, density, alignment, and components vary.
 
-No honest system can guarantee virality. Distribution changes, audiences differ, and a large account's winning formula may fail in another niche.
+## Honest answers
 
-This skill improves the quality and repeatability of the decisions you control: topic, evidence, hook, argument, design direction, and learning.
+### Will this guarantee virality?
+
+No. Distribution changes and audiences behave differently. The skill improves the decisions you can control: topic, evidence, hook, argument, design direction, CTA, and learning.
+
+### Does it require a paid API?
+
+The skill itself calls no service and requires no API key. Your chosen agent, research tools, or image generator may have their own costs.
+
+### Does it clone another creator's style?
+
+No. It can analyze editorial principles and quality patterns, but it explicitly preserves the user's voice and visual identity.
+
+### Can it generate finished images?
+
+Yes, when the host agent has browser, rendering, or image-generation tools. Otherwise it returns copy and a production brief a designer can execute directly.
 
 ## Repository structure
 
 ```text
 carousel-story-engine/
-├── README.md
+├── assets/                       # before/after and workflow visuals
+├── carousel-story-engine/
+│   ├── agents/openai.yaml
+│   ├── references/
+│   │   └── editorial-quality.md  # claim ledger and final quality gate
+│   └── SKILL.md                  # the portable skill
+├── evals/                        # regression cases and scoring rubric
+├── examples/
+│   └── consulting-risk-carousel.md
 ├── LICENSE
-└── carousel-story-engine/
-    ├── SKILL.md
-    └── agents/
-        └── openai.yaml
+└── README.md
 ```
 
 ## License
 
-MIT. Use it, adapt it, and ship work that sounds like your brand.
+MIT. Use it in your own projects, adapt it to your workflow, and keep the output recognizably yours.
 
-If the skill improves your next carousel, star the repository. It helps other builders find it.
+If this skill saves you from publishing one more generic carousel, [star the repository](https://github.com/luisroquette/carousel-story-engine). It helps other creators find it.
