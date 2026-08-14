@@ -18,7 +18,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="sota-hooks.css">
   <script defer src="site.js"></script>
+  <script defer src="sota-hooks.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -67,6 +69,32 @@
       <div class="section-head">
         <p class="index">02 / SEE THE DIFFERENCE</p>
         <h2>Same topic.<br>Different editorial standard.</h2>
+      </div>
+      <div class="hook-lab" data-hook-lab>
+        <div class="hook-top"><span><i></i> HOOK TOURNAMENT</span><b>ILLUSTRATIVE RUBRIC SCORES · NOT PERFORMANCE RESULTS</b></div>
+        <div class="hook-tabs" role="tablist" aria-label="Illustrative hook candidates">
+          <button id="hook-tab-generic" type="button" role="tab" aria-selected="false" aria-controls="hook-panel" tabindex="-1" data-hook-view="generic"><span>01</span> Generic</button>
+          <button id="hook-tab-challenger" type="button" role="tab" aria-selected="false" aria-controls="hook-panel" tabindex="-1" data-hook-view="challenger"><span>02</span> Challenger</button>
+          <button id="hook-tab-winner" type="button" role="tab" aria-selected="true" aria-controls="hook-panel" tabindex="0" data-hook-view="winner"><span>03</span> Selected</button>
+        </div>
+        <div class="hook-panel" id="hook-panel" role="tabpanel" aria-labelledby="hook-tab-winner" aria-live="polite">
+          <div class="hook-candidate">
+            <span data-hook-verdict>SELECTED ANGLE</span>
+            <h3 data-hook-copy>Most AI carousels fail after the cover.</h3>
+            <p data-hook-reason>Specific failure point, credible promise and a deck that can repay the tension.</p>
+          </div>
+          <div class="hook-score">
+            <div class="score-total"><span>EDITORIAL SCORE</span><strong data-hook-total>4.7<small>/5</small></strong></div>
+            <ol>
+              <li><span>Clarity</span><i><b data-hook-bar="clarity" style="width:96%"></b></i><em data-hook-score="clarity">4.8</em></li>
+              <li><span>Specificity</span><i><b data-hook-bar="specificity" style="width:94%"></b></i><em data-hook-score="specificity">4.7</em></li>
+              <li><span>Tension</span><i><b data-hook-bar="tension" style="width:92%"></b></i><em data-hook-score="tension">4.6</em></li>
+              <li><span>Payoff</span><i><b data-hook-bar="payoff" style="width:94%"></b></i><em data-hook-score="payoff">4.7</em></li>
+              <li><span>Credibility</span><i><b data-hook-bar="credibility" style="width:94%"></b></i><em data-hook-score="credibility">4.7</em></li>
+            </ol>
+          </div>
+        </div>
+        <p class="hook-note">A browser model of the 1–5 hook rubric. It evaluates editorial fit only and never promises reach, saves, leads or sales.</p>
       </div>
       <div class="compare">
         <figure>
