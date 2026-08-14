@@ -7,6 +7,7 @@ A portable AI skill for creating evidence-led Instagram and LinkedIn carousels w
 [![License: MIT](https://img.shields.io/badge/license-MIT-111111.svg)](LICENSE)
 [![RocketLabs](https://img.shields.io/badge/RocketLabs-open%20system-7C5CFC)](https://github.com/luisroquette/RocketLabs)
 [![Latest release](https://img.shields.io/github/v/release/luisroquette/carousel-story-engine)](https://github.com/luisroquette/carousel-story-engine/releases/latest)
+[![Product site](https://img.shields.io/badge/product%20site-live-6842FF)](https://luisroquette.github.io/carousel-story-engine/)
 [![GitHub stars](https://img.shields.io/github/stars/luisroquette/carousel-story-engine?style=social)](https://github.com/luisroquette/carousel-story-engine/stargazers)
 
 [Install in 60 seconds](#install-in-60-seconds) · [See a complete output](examples/consulting-risk-carousel.md) · [Read the skill](carousel-story-engine/SKILL.md)
